@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Descripción de los Modelos — FURPS &amp; Boehm</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap-wide">
+    <div class="brand"><img src="assets/pinterest-logo.png" alt="Pinterest" onerror="this.style.display='none'">Pinterest<span>.</span></div>
+    <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+    <nav class="mainnav">
+      <a href="index.html">Inicio</a>
+      <a href="modelos.html" class="active">Modelos</a>
+      <a href="aplicacion.html">Aplicación</a>
+      <a href="resultados.html">Resultados</a>
+      <a href="conclusiones.html">Conclusiones</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:24px;">
+  <div class="wrap">
+    <span class="eyebrow-tag"></span>
+    <h1>Descripción de los modelos de calidad</h1>
+    <p class="lede">Dos modelos, dos formas de mirar la calidad de un producto de software: FURPS parte de cinco cualidades observables por el usuario; Boehm organiza la calidad en una jerarquía de factores heredada del modelo de McCall.</p>
+  </div>
+</section>
+
+<!-- ================= FURPS ================= -->
+<section class="tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Modelo 1</span>
+      <h2>Modelo FURPS</h2>
+    </div>
+    <p class="lead">Propuesto por <strong>Robert Grady</strong> y <strong>Hewlett-Packard (HP)</strong> en 1987, el modelo FURPS evalúa la calidad de un producto de software a partir de cinco características, de cuyas iniciales en inglés toma su nombre: <strong>F</strong>unctionality, <strong>U</strong>sability, <strong>R</strong>eliability, <strong>P</strong>erformance y <strong>S</strong>upportability (Funcionalidad, Facilidad de Uso, Confiabilidad, Rendimiento y Soporte).</p>
+    <p>Cada característica agrupa varios factores concretos y verificables, y a cada uno se le asigna un peso dentro de un puntaje total de 100 puntos. Esta distribución de pesos es la que se usa después para calcular el puntaje final evaluado.</p>
+
+    <div class="table-scroll">
+      <table>
+        <caption> Características y factores del modelo FURPS (pesos máximos)</caption>
+        <thead>
+          <tr>
+            <th>Característica</th>
+            <th class="num">Puntaje</th>
+            <th>Factor</th>
+            <th class="num">Puntaje</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td rowspan="3"><strong>Funcionalidad</strong></td><td class="num" rowspan="3">30</td><td>Características y capacidades del programa</td><td class="num">10</td></tr>
+          <tr><td>Generalidad de las funciones</td><td class="num">10</td></tr>
+          <tr><td>Seguridad del sistema</td><td class="num">10</td></tr>
+
+          <tr><td rowspan="4"><strong>Facilidad de uso</strong></td><td class="num" rowspan="4">20</td><td>Capacidad de prueba</td><td class="num">5</td></tr>
+          <tr><td>Capacidad de configuración</td><td class="num">5</td></tr>
+          <tr><td>Compatibilidad</td><td class="num">5</td></tr>
+          <tr><td>Requisitos de instalación</td><td class="num">5</td></tr>
+
+          <tr><td rowspan="3"><strong>Confiabilidad</strong></td><td class="num" rowspan="3">15</td><td>Frecuencia y severidad de fallos</td><td class="num">5</td></tr>
+          <tr><td>Exactitud de las salidas</td><td class="num">5</td></tr>
+          <tr><td>Capacidad de predicción</td><td class="num">5</td></tr>
+
+          <tr><td rowspan="4"><strong>Rendimiento</strong></td><td class="num" rowspan="4">20</td><td>Factores humanos</td><td class="num">5</td></tr>
+          <tr><td>Factores estéticos</td><td class="num">5</td></tr>
+          <tr><td>Consistencia de la interfaz</td><td class="num">5</td></tr>
+          <tr><td>Documentación</td><td class="num">5</td></tr>
+
+          <tr><td rowspan="5"><strong>Soporte</strong></td><td class="num" rowspan="5">15</td><td>Velocidad de procesamiento</td><td class="num">3</td></tr>
+          <tr><td>Tiempo de respuesta</td><td class="num">3</td></tr>
+          <tr><td>Consumo de recursos</td><td class="num">3</td></tr>
+          <tr><td>Rendimiento efectivo total</td><td class="num">3</td></tr>
+          <tr><td>Eficacia</td><td class="num">3</td></tr>
+
+          <tr class="total-row"><td><strong>Puntaje total</strong></td><td class="num"><strong>100</strong></td><td></td><td class="num"><strong>100</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>Ventajas</h3>
+        <p>Sus criterios son fácilmente comprensibles, lo que facilita su aplicación práctica; permite comparar productos de software distintos bajo el mismo esquema de puntaje.</p>
+      </div>
+      <div class="card">
+        <h3>Cuándo se usa</h3>
+        <p>Es especialmente útil para evaluar aplicaciones orientadas al usuario final —como redes sociales o plataformas web— donde la funcionalidad y la experiencia de uso pesan tanto como el desempeño técnico.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BOEHM ================= -->
+<section class="tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Modelo 2</span>
+      <h2>Modelo de Boehm</h2>
+    </div>
+    <p class="lead">Propuesto por <strong>Barry Boehm</strong> en 1978, este modelo es similar al de McCall: define la calidad en términos de atributos cualitativos medidos mediante métricas. Su aporte distintivo es una <strong>estructura jerárquica de tres niveles</strong>.</p>
+
+    <div class="grid-3">
+      <div class="card">
+        <h4 class="mt-0">Nivel alto</h4>
+        <p>Requerimientos generales de uso: <strong>Utilidad</strong> (as-is utility), <strong>Mantenibilidad</strong> y <strong>Portabilidad</strong>.</p>
+      </div>
+      <div class="card">
+        <h4 class="mt-0">Nivel intermedio</h4>
+        <p>Los factores de calidad propiamente dichos: fiabilidad, eficiencia, facilidad de uso, capacidad de prueba, comprensibilidad y flexibilidad.</p>
+      </div>
+      <div class="card">
+        <h4 class="mt-0">Nivel primitivo</h4>
+        <p>Características asociadas a una o dos métricas puntuales: exactitud, consistencia, simplicidad, concisión, generalidad, entre otras.</p>
+      </div>
+    </div>
+
+    <p>El modelo busca que el software <strong>haga lo que el usuario espera</strong> que haga: que use los recursos del sistema de forma eficiente, que sea fácil de aprender y usar, y que esté bien diseñado para poder mantenerse y adaptarse en el tiempo. Para poder aplicarlo con el mismo esquema de puntaje que FURPS, se distribuyó su jerarquía en 100 puntos:</p>
+
+    <div class="table-scroll">
+      <table>
+        <caption> Jerarquía y factores del modelo de Boehm (pesos máximos)</caption>
+        <thead>
+          <tr>
+            <th>Nivel alto</th>
+            <th class="num">Puntaje</th>
+            <th>Nivel intermedio (factor)</th>
+            <th class="num">Puntaje</th>
+            <th>Característica primitiva</th>
+            <th class="num">Puntaje</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td rowspan="7"><strong>Utilidad (as-is)</strong></td><td class="num" rowspan="7">40</td>
+              <td rowspan="3">Fiabilidad</td><td class="num" rowspan="3">15</td><td>Exactitud</td><td class="num">5</td></tr>
+          <tr><td>Consistencia</td><td class="num">5</td></tr>
+          <tr><td>Tolerancia a fallos</td><td class="num">5</td></tr>
+
+          <tr><td rowspan="2">Eficiencia</td><td class="num" rowspan="2">15</td><td>Eficiencia de ejecución</td><td class="num">8</td></tr>
+          <tr><td>Eficiencia de almacenamiento</td><td class="num">7</td></tr>
+
+          <tr><td rowspan="2">Facilidad de uso</td><td class="num" rowspan="2">10</td><td>Facilidad de manejo</td><td class="num">5</td></tr>
+          <tr><td>Facilidad de aprendizaje</td><td class="num">5</td></tr>
+
+          <tr><td rowspan="8"><strong>Mantenibilidad</strong></td><td class="num" rowspan="8">40</td>
+              <td rowspan="3">Capacidad de prueba</td><td class="num" rowspan="3">15</td><td>Simplicidad</td><td class="num">5</td></tr>
+          <tr><td>Instrumentación</td><td class="num">5</td></tr>
+          <tr><td>Autodescriptividad</td><td class="num">5</td></tr>
+
+          <tr><td rowspan="3">Comprensibilidad</td><td class="num" rowspan="3">15</td><td>Consistencia</td><td class="num">5</td></tr>
+          <tr><td>Estructuración</td><td class="num">5</td></tr>
+          <tr><td>Concisión</td><td class="num">5</td></tr>
+
+          <tr><td rowspan="2">Flexibilidad</td><td class="num" rowspan="2">10</td><td>Generalidad</td><td class="num">5</td></tr>
+          <tr><td>Expansibilidad</td><td class="num">5</td></tr>
+
+          <tr><td rowspan="2"><strong>Portabilidad</strong></td><td class="num" rowspan="2">20</td>
+              <td rowspan="2">Portabilidad</td><td class="num" rowspan="2">20</td><td>Independencia del sistema</td><td class="num">10</td></tr>
+          <tr><td>Independencia del dispositivo</td><td class="num">10</td></tr>
+
+          <tr class="total-row"><td><strong>Puntaje total</strong></td><td class="num"><strong>100</strong></td><td></td><td class="num"></td><td></td><td class="num"><strong>100</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>Ventajas</h3>
+        <p>Integra el desarrollo del software con su mantenimiento y ofrece un amplio rango de características primitivas, tomando lo mejor de otros modelos como el de McCall.</p>
+      </div>
+      <div class="card">
+        <h3>Cuándo se usa</h3>
+        <p>Resulta útil cuando interesa evaluar no solo la experiencia de uso actual, sino también qué tan fácil sería mantener, adaptar o portar el producto a otros contextos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap-wide">
+    <p>Evaluación de Calidad · Modelos FURPS y Boehm aplicados a Pinterest</p>
+    <p>[Universidad De La Guajira] · [Ingenieria De Software II] · 2026</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

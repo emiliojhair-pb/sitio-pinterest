@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aplicación de las Plantillas — Pinterest</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap-wide">
+    <div class="brand"><img src="assets/pinterest-logo.png" alt="Pinterest" onerror="this.style.display='none'">Pinterest<span>.</span></div>
+    <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+    <nav class="mainnav">
+      <a href="index.html">Inicio</a>
+      <a href="modelos.html">Modelos</a>
+      <a href="aplicacion.html" class="active">Aplicación</a>
+      <a href="resultados.html">Resultados</a>
+      <a href="conclusiones.html">Conclusiones</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:8px;">
+  <div class="wrap-wide">
+    <span class="eyebrow-tag"></span>
+    <h1>Aplicación de las plantillas de evaluación</h1>
+    <p class="lede">Cada modelo se diligenció en dos partes: primero la <strong>valoración</strong> de cada criterio en una escala de 1 a 4, con su justificación; luego la <strong>equivalencia de puntajes</strong>, que convierte esa valoración en el puntaje ponderado de cada modelo.</p>
+    <p class="small-note"><strong>Escala valorativa:</strong> 1 = Deficiente · 2 = Regular · 3 = Bueno · 4 = Excelente</p>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap-wide">
+
+    <div class="tabs" role="tablist">
+      <button class="tab-btn active" data-tab="tab-furps">Modelo FURPS</button>
+      <button class="tab-btn" data-tab="tab-boehm">Modelo Boehm</button>
+    </div>
+
+    <!-- ===================== TAB FURPS ===================== -->
+    <div class="tab-panel active" id="tab-furps">
+
+      <h2>1. Valoración Modelo — FURPS</h2>
+      <div class="table-scroll">
+        <table>
+          <caption> Valoración de Pinterest según los factores FURPS</caption>
+          <thead>
+            <tr>
+              <th>Característica</th>
+              <th>Factor</th>
+              <th class="num">1</th>
+              <th class="num">2</th>
+              <th class="num">3</th>
+              <th class="num">4</th>
+              <th>Justificación</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="group-row"><td colspan="7"><strong>F — Funcionalidad</strong></td></tr>
+            <tr><td></td><td>Características y capacidades del programa</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td>Pinterest ofrece tableros, pines, video-pines, compras y colecciones: un conjunto de funciones amplio y bien resuelto.</td></tr>
+            <tr><td></td><td>Generalidad de las funciones</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td>Las mismas funciones sirven para cualquier temática (moda, cocina, diseño, negocios) sin restringirse a un solo uso.</td></tr>
+            <tr><td></td><td>Seguridad del sistema</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td class="num"><span class="dot off"></span></td><td>Tiene verificación en dos pasos y controles de privacidad, pero persisten dudas sobre el uso publicitario de los datos.</td></tr>
+
+            <tr class="group-row"><td colspan="7"><strong>U — Facilidad de uso</strong></td></tr>
+            <tr><td></td><td>Capacidad de prueba</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td class="num"><span class="dot off"></span></td><td>El feed y las funciones se exploran libremente, aunque herramientas avanzadas (Trends, panel de creador) no son evidentes al inicio.</td></tr>
+            <tr><td></td><td>Capacidad de configuración</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td class="num"><span class="dot off"></span></td><td>Permite ajustar intereses, notificaciones y privacidad, aunque el algoritmo de recomendación no es configurable en detalle.</td></tr>
+            <tr><td></td><td>Compatibilidad</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td>Disponible en web, iOS, Android y extensión de navegador, con sincronización entre dispositivos.</td></tr>
+            <tr><td></td><td>Requisitos de instalación</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td>Es gratuita y no requiere licencias ni configuración técnica; basta con crear una cuenta.</td></tr>
+
+            <tr class="group-row"><td colspan="7"><strong>R — Confiabilidad</strong></td></tr>
+            <tr><td></td><td>Frecuencia y severidad de fallos</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td class="num"><span class="dot off"></span></td><td>Plataforma estable en general; ocasionalmente hay errores de carga de imágenes o retrasos del feed.</td></tr>
+            <tr><td></td><td>Exactitud de las salidas</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td class="num"><span class="dot off"></span></td><td>Las recomendaciones suelen ser pertinentes, aunque a veces repiten contenido o sugieren pines poco relacionados.</td></tr>
+            <tr><td></td><td>Capacidad de predicción</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td class="num"><span class="dot off"></span></td><td>El comportamiento de la app es consistente entre sesiones, aunque el algoritmo de descubrimiento no siempre es predecible.</td></tr>
+
+            <tr class="group-row"><td colspan="7"><strong>P — Rendimiento</strong></td></tr>
+            <tr><td></td><td>Factores humanos</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td>El scroll infinito y el diseño en mosaico facilitan la exploración natural del contenido.</td></tr>
+            <tr><td></td><td>Factores estéticos</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td>Interfaz visual y limpia, coherente con el propósito de descubrimiento visual.</td></tr>
+            <tr><td></td><td>Consistencia de la interfaz</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td>Mantiene el mismo lenguaje visual y de interacción en web y en las apps móviles.</td></tr>
+            <tr><td></td><td>Documentación</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td class="num"><span class="dot off"></span></td><td>Existe centro de ayuda y guías para creadores y anunciantes, pero es poco visible para el usuario común.</td></tr>
+
+            <tr class="group-row"><td colspan="7"><strong>S — Soporte</strong></td></tr>
+            <tr><td></td><td>Velocidad de procesamiento</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td class="num"><span class="dot off"></span></td><td>La carga de contenido multimedia es ágil en conexiones normales, con algo de lentitud en redes lentas.</td></tr>
+            <tr><td></td><td>Tiempo de respuesta</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td class="num"><span class="dot off"></span></td><td>Las acciones de guardar, buscar y comentar responden rápido en la mayoría de los casos.</td></tr>
+            <tr><td></td><td>Consumo de recursos</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td>Al manejar imágenes y video en alta resolución, la app consume batería y datos móviles de forma notoria.</td></tr>
+            <tr><td></td><td>Rendimiento efectivo total</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td class="num"><span class="dot off"></span></td><td>En conjunto, el desempeño es adecuado para el volumen de contenido que maneja la plataforma.</td></tr>
+            <tr><td></td><td>Eficacia</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td>Cumple eficazmente su propósito: ayudar a descubrir, guardar y organizar ideas visuales.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>2. Equivalencia de puntajes — FURPS</h2>
+      <div class="table-scroll">
+        <table>
+          <caption> Cálculo del puntaje ponderado (Punt = Puntaje máx. ÷ 4 × valoración)</caption>
+          <thead>
+            <tr>
+              <th>Característica</th>
+              <th>Factor</th>
+              <th class="num">Puntaje máx.</th>
+              <th class="num">Valoración</th>
+              <th class="num">Punt.</th>
+              <th class="num">Total característica</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td rowspan="3"><strong>Funcionalidad</strong></td><td>Características y capacidades</td><td class="num">10</td><td class="num"><span class="score-pill s4">4</span></td><td class="num">10,00</td><td class="num" rowspan="3"><strong>27,50</strong></td></tr>
+            <tr><td>Generalidad de las funciones</td><td class="num">10</td><td class="num"><span class="score-pill s4">4</span></td><td class="num">10,00</td></tr>
+            <tr><td>Seguridad del sistema</td><td class="num">10</td><td class="num"><span class="score-pill s3">3</span></td><td class="num">7,50</td></tr>
+
+            <tr><td rowspan="4"><strong>Facilidad de uso</strong></td><td>Capacidad de prueba</td><td class="num">5</td><td class="num"><span class="score-pill s3">3</span></td><td class="num">3,75</td><td class="num" rowspan="4"><strong>17,50</strong></td></tr>
+            <tr><td>Capacidad de configuración</td><td class="num">5</td><td class="num"><span class="score-pill s3">3</span></td><td class="num">3,75</td></tr>
+            <tr><td>Compatibilidad</td><td class="num">5</td><td class="num"><span class="score-pill s4">4</span></td><td class="num">5,00</td></tr>
+            <tr><td>Requisitos de instalación</td><td class="num">5</td><td class="num"><span class="score-pill s4">4</span></td><td class="num">5,00</td></tr>
+
+            <tr><td rowspan="3"><strong>Confiabilidad</strong></td><td>Frecuencia y severidad de fallos</td><td class="num">5</td><td class="num"><span class="score-pill s3">3</span></td><td class="num">3,75</td><td class="num" rowspan="3"><strong>11,25</strong></td></tr>
+            <tr><td>Exactitud de las salidas</td><td class="num">5</td><td class="num"><span class="score-pill s3">3</span></td><td class="num">3,75</td></tr>
+            <tr><td>Capacidad de predicción</td><td class="num">5</td><td class="num"><span class="score-pill s3">3</span></td><td class="num">3,75</td></tr>
+
+            <tr><td rowspan="4"><strong>Rendimiento</strong></td><td>Factores humanos</td><td class="num">5</td><td class="num"><span class="score-pill s4">4</span></td><td class="num">5,00</td><td class="num" rowspan="4"><strong>18,75</strong></td></tr>
+            <tr><td>Factores estéticos</td><td class="num">5</td><td class="num"><span class="score-pill s4">4</span></td><td class="num">5,00</td></tr>
+            <tr><td>Consistencia de la interfaz</td><td class="num">5</td><td class="num"><span class="score-pill s4">4</span></td><td class="num">5,00</td></tr>
+            <tr><td>Documentación</td><td class="num">5</td><td class="num"><span class="score-pill s3">3</span></td><td class="num">3,75</td></tr>
+
+            <tr><td rowspan="5"><strong>Soporte</strong></td><td>Velocidad de procesamiento</td><td class="num">3</td><td class="num"><span class="score-pill s3">3</span></td><td class="num">2,25</td><td class="num" rowspan="5"><strong>11,25</strong></td></tr>
+            <tr><td>Tiempo de respuesta</td><td class="num">3</td><td class="num"><span class="score-pill s3">3</span></td><td class="num">2,25</td></tr>
+            <tr><td>Consumo de recursos</td><td class="num">3</td><td class="num"><span class="score-pill s2">2</span></td><td class="num">1,50</td></tr>
+            <tr><td>Rendimiento efectivo total</td><td class="num">3</td><td class="num"><span class="score-pill s3">3</span></td><td class="num">2,25</td></tr>
+            <tr><td>Eficacia</td><td class="num">3</td><td class="num"><span class="score-pill s4">4</span></td><td class="num">3,00</td></tr>
+
+            <tr class="total-row"><td colspan="5"><strong>Puntaje total FURPS</strong></td><td class="num"><strong>86,25 / 100</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ===================== TAB BOEHM ===================== -->
+    <div class="tab-panel" id="tab-boehm">
+
+      <h2>1. Valoración Modelo — Boehm</h2>
+      <div class="table-scroll">
+        <table>
+          <caption> Valoración de Pinterest según los factores de Boehm</caption>
+          <thead>
+            <tr>
+              <th>Factor</th>
+              <th>Característica primitiva</th>
+              <th class="num">1</th>
+              <th class="num">2</th>
+              <th class="num">3</th>
+              <th class="num">4</th>
+              <th>Justificación</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="group-row"><td colspan="7"><strong>Utilidad (as-is)</strong></td></tr>
+            <tr><td rowspan="3">Fiabilidad</td><td>Exactitud</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td class="num"><span class="dot off"></span></td><td>Las recomendaciones y resultados de búsqueda suelen coincidir con lo solicitado, con margen de error en contenido poco relacionado.</td></tr>
+            <tr><td>Consistencia</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td>El comportamiento de la app es uniforme entre sesiones y dispositivos.</td></tr>
+            <tr><td>Tolerancia a fallos</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td class="num"><span class="dot off"></span></td><td>Ante errores de red, la app suele recuperarse y recargar el contenido sin perder la información del usuario.</td></tr>
+
+            <tr><td rowspan="2">Eficiencia</td><td>Eficiencia de ejecución</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td class="num"><span class="dot off"></span></td><td>El desplazamiento y la carga de contenido son fluidos en la mayoría de equipos, con algo de lentitud en gama baja.</td></tr>
+            <tr><td>Eficiencia de almacenamiento</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td class="num"><span class="dot off"></span></td><td>La app ocupa un espacio considerable por el manejo de caché de imágenes y video.</td></tr>
+
+            <tr><td rowspan="2">Facilidad de uso</td><td>Facilidad de manejo</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td>Guardar, crear tableros y buscar contenido son acciones intuitivas desde el primer uso.</td></tr>
+            <tr><td>Facilidad de aprendizaje</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td>El concepto de pines y tableros se entiende rápido, incluso sin experiencia previa en redes sociales.</td></tr>
+
+            <tr class="group-row"><td colspan="7"><strong>Mantenibilidad</strong></td></tr>
+            <tr><td rowspan="3">Capacidad de prueba</td><td>Simplicidad</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td>Las funciones principales (guardar, pin, buscar) son claras y no requieren pasos complejos para verificarse.</td></tr>
+            <tr><td>Instrumentación</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td class="num"><span class="dot off"></span></td><td>Ofrece analíticas para creadores y negocios, aunque limitadas para el usuario final.</td></tr>
+            <tr><td>Autodescriptividad</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td class="num"><span class="dot off"></span></td><td>Los íconos y etiquetas son mayormente comprensibles; funciones nuevas como Idea Pins requieren algo de explicación.</td></tr>
+
+            <tr><td rowspan="3">Comprensibilidad</td><td>Consistencia</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td>Los mismos íconos y patrones de interacción se repiten en toda la plataforma.</td></tr>
+            <tr><td>Estructuración</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td>El contenido se organiza claramente en tableros, secciones y categorías temáticas.</td></tr>
+            <tr><td>Concisión</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td class="num"><span class="dot off"></span></td><td>La interfaz es mayormente minimalista, aunque incluye anuncios que compiten por la atención.</td></tr>
+
+            <tr><td rowspan="2">Flexibilidad</td><td>Generalidad</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td>Sirve para dominios muy distintos: moda, cocina, diseño de interiores, negocios, educación, etc.</td></tr>
+            <tr><td>Expansibilidad</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td>Ha incorporado nuevos formatos (video pines, compras, ideas) sin perder su estructura original.</td></tr>
+
+            <tr class="group-row"><td colspan="7"><strong>Portabilidad</strong></td></tr>
+            <tr><td rowspan="2">Portabilidad</td><td>Independencia del sistema</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td>Funciona en iOS, Android, Windows, macOS y Linux a través del navegador.</td></tr>
+            <tr><td>Independencia del dispositivo</td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot off"></span></td><td class="num"><span class="dot"></span></td><td>Se adapta correctamente a celulares, tablets y computadores de escritorio.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>2. Equivalencia de puntajes — Boehm</h2>
+      <div class="table-scroll">
+        <table>
+          <caption> Cálculo del puntaje ponderado (Punt = Puntaje máx. ÷ 4 × valoración)</caption>
+          <thead>
+            <tr>
+              <th>Nivel alto</th>
+              <th>Factor</th>
+              <th>Característica</th>
+              <th class="num">Puntaje máx.</th>
+              <th class="num">Valoración</th>
+              <th class="num">Punt.</th>
+              <th class="num">Total nivel alto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td rowspan="7"><strong>Utilidad</strong></td><td rowspan="3">Fiabilidad</td><td>Exactitud</td><td class="num">5</td><td class="num"><span class="score-pill s3">3</span></td><td class="num">3,75</td><td class="num" rowspan="7"><strong>33,75</strong></td></tr>
+            <tr><td>Consistencia</td><td class="num">5</td><td class="num"><span class="score-pill s4">4</span></td><td class="num">5,00</td></tr>
+            <tr><td>Tolerancia a fallos</td><td class="num">5</td><td class="num"><span class="score-pill s3">3</span></td><td class="num">3,75</td></tr>
+
+            <tr><td rowspan="2">Eficiencia</td><td>Eficiencia de ejecución</td><td class="num">8</td><td class="num"><span class="score-pill s3">3</span></td><td class="num">6,00</td></tr>
+            <tr><td>Eficiencia de almacenamiento</td><td class="num">7</td><td class="num"><span class="score-pill s3">3</span></td><td class="num">5,25</td></tr>
+
+            <tr><td rowspan="2">Facilidad de uso</td><td>Facilidad de manejo</td><td class="num">5</td><td class="num"><span class="score-pill s4">4</span></td><td class="num">5,00</td></tr>
+            <tr><td>Facilidad de aprendizaje</td><td class="num">5</td><td class="num"><span class="score-pill s4">4</span></td><td class="num">5,00</td></tr>
+
+            <tr><td rowspan="8"><strong>Mantenibilidad</strong></td><td rowspan="3">Capacidad de prueba</td><td>Simplicidad</td><td class="num">5</td><td class="num"><span class="score-pill s4">4</span></td><td class="num">5,00</td><td class="num" rowspan="8"><strong>36,25</strong></td></tr>
+            <tr><td>Instrumentación</td><td class="num">5</td><td class="num"><span class="score-pill s3">3</span></td><td class="num">3,75</td></tr>
+            <tr><td>Autodescriptividad</td><td class="num">5</td><td class="num"><span class="score-pill s3">3</span></td><td class="num">3,75</td></tr>
+
+            <tr><td rowspan="3">Comprensibilidad</td><td>Consistencia</td><td class="num">5</td><td class="num"><span class="score-pill s4">4</span></td><td class="num">5,00</td></tr>
+            <tr><td>Estructuración</td><td class="num">5</td><td class="num"><span class="score-pill s4">4</span></td><td class="num">5,00</td></tr>
+            <tr><td>Concisión</td><td class="num">5</td><td class="num"><span class="score-pill s3">3</span></td><td class="num">3,75</td></tr>
+
+            <tr><td rowspan="2">Flexibilidad</td><td>Generalidad</td><td class="num">5</td><td class="num"><span class="score-pill s4">4</span></td><td class="num">5,00</td></tr>
+            <tr><td>Expansibilidad</td><td class="num">5</td><td class="num"><span class="score-pill s4">4</span></td><td class="num">5,00</td></tr>
+
+            <tr><td rowspan="2"><strong>Portabilidad</strong></td><td rowspan="2">Portabilidad</td><td>Independencia del sistema</td><td class="num">10</td><td class="num"><span class="score-pill s4">4</span></td><td class="num">10,00</td><td class="num" rowspan="2"><strong>20,00</strong></td></tr>
+            <tr><td>Independencia del dispositivo</td><td class="num">10</td><td class="num"><span class="score-pill s4">4</span></td><td class="num">10,00</td></tr>
+
+            <tr class="total-row"><td colspan="6"><strong>Puntaje total Boehm</strong></td><td class="num"><strong>90,00 / 100</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="wrap-wide">
+    <p>Evaluación de Calidad · Modelos FURPS y Boehm aplicados a Pinterest</p>
+    <p>[Universidad De La Guajira] · [Ingenieria De Software II] · 2026</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
