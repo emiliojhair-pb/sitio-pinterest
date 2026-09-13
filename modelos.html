@@ -101,79 +101,79 @@
       <span class="kicker">Modelo 2</span>
       <h2>Modelo de Boehm</h2>
     </div>
-    <p class="lead">Propuesto por <strong>Barry Boehm</strong> en 1978, este modelo es similar al de McCall: define la calidad en términos de atributos cualitativos medidos mediante métricas. Su aporte distintivo es una <strong>estructura jerárquica de tres niveles</strong>.</p>
+    <p class="lead">Presentado por <strong>Barry Boehm</strong> en 1978, introduce características de alto nivel, características de nivel intermedio y características primitivas, cada una de las cuales contribuye al nivel general de calidad: la <strong>Utilidad General</strong> del software.</p>
 
     <div class="grid-3">
       <div class="card">
-        <h4 class="mt-0">Nivel alto</h4>
-        <p>Requerimientos generales de uso: <strong>Utilidad</strong> (as-is utility), <strong>Mantenibilidad</strong> y <strong>Portabilidad</strong>.</p>
+        <h4 class="mt-0">Utilidad General</h4>
+        <p>Es el nivel más alto del modelo: agrupa todo lo que hace útil al software para quien lo usa.</p>
       </div>
       <div class="card">
-        <h4 class="mt-0">Nivel intermedio</h4>
-        <p>Los factores de calidad propiamente dichos: fiabilidad, eficiencia, facilidad de uso, capacidad de prueba, comprensibilidad y flexibilidad.</p>
+        <h4 class="mt-0">Características de alto nivel</h4>
+        <p><strong>Portabilidad</strong>, <strong>Utilidad</strong> y <strong>Mantenibilidad</strong>.</p>
       </div>
       <div class="card">
-        <h4 class="mt-0">Nivel primitivo</h4>
-        <p>Características asociadas a una o dos métricas puntuales: exactitud, consistencia, simplicidad, concisión, generalidad, entre otras.</p>
+        <h4 class="mt-0">Nivel intermedio y primitivas</h4>
+        <p>Cada característica de alto nivel se descompone en factores intermedios (fiabilidad, eficiencia, interactividad…) y estos, a su vez, en características primitivas medibles.</p>
       </div>
     </div>
 
-    <p>El modelo busca que el software <strong>haga lo que el usuario espera</strong> que haga: que use los recursos del sistema de forma eficiente, que sea fácil de aprender y usar, y que esté bien diseñado para poder mantenerse y adaptarse en el tiempo. Para poder aplicarlo con el mismo esquema de puntaje que FURPS, se distribuyó su jerarquía en 100 puntos:</p>
+    <p>Para la evaluación, el modelo asigna la siguiente tabla de puntuación según los niveles de cada característica, distribuyendo un total de 100 puntos:</p>
 
     <div class="table-scroll">
       <table>
-        <caption> Jerarquía y factores del modelo de Boehm (pesos máximos)</caption>
+        <caption>Tabla 2. Tabla de puntuación del modelo de Boehm (pesos máximos, según plantilla oficial)</caption>
         <thead>
           <tr>
-            <th>Nivel alto</th>
+            <th>Características de alto nivel</th>
             <th class="num">Puntaje</th>
-            <th>Nivel intermedio (factor)</th>
-            <th class="num">Puntaje</th>
-            <th>Característica primitiva</th>
+            <th>Características de nivel intermedio</th>
+            <th>Características primitivas</th>
             <th class="num">Puntaje</th>
           </tr>
         </thead>
         <tbody>
-          <tr><td rowspan="7"><strong>Utilidad (as-is)</strong></td><td class="num" rowspan="7">40</td>
-              <td rowspan="3">Fiabilidad</td><td class="num" rowspan="3">15</td><td>Exactitud</td><td class="num">5</td></tr>
-          <tr><td>Consistencia</td><td class="num">5</td></tr>
-          <tr><td>Tolerancia a fallos</td><td class="num">5</td></tr>
+          <tr><td rowspan="2"><strong>Portabilidad</strong></td><td class="num" rowspan="2">10</td><td rowspan="2">—</td><td>Independencia de dispositivos</td><td class="num">5</td></tr>
+          <tr><td>Auto-contención</td><td class="num">5</td></tr>
 
-          <tr><td rowspan="2">Eficiencia</td><td class="num" rowspan="2">15</td><td>Eficiencia de ejecución</td><td class="num">8</td></tr>
-          <tr><td>Eficiencia de almacenamiento</td><td class="num">7</td></tr>
+          <tr><td rowspan="10"><strong>Utilidad</strong></td><td class="num" rowspan="10">70</td>
+              <td rowspan="4">Fiabilidad — <span class="num">40</span></td><td>Precisión</td><td class="num"></td></tr>
+          <tr><td>Completitud</td><td class="num"></td></tr>
+          <tr><td>Robustez</td><td class="num"></td></tr>
+          <tr><td>Consistencia</td><td class="num"></td></tr>
 
-          <tr><td rowspan="2">Facilidad de uso</td><td class="num" rowspan="2">10</td><td>Facilidad de manejo</td><td class="num">5</td></tr>
-          <tr><td>Facilidad de aprendizaje</td><td class="num">5</td></tr>
+          <tr><td rowspan="3">Eficiencia — <span class="num">15</span></td><td>Responsabilidad</td><td class="num"></td></tr>
+          <tr><td>Eficiencia de dispositivos</td><td class="num"></td></tr>
+          <tr><td>Accesibilidad</td><td class="num"></td></tr>
 
-          <tr><td rowspan="8"><strong>Mantenibilidad</strong></td><td class="num" rowspan="8">40</td>
-              <td rowspan="3">Capacidad de prueba</td><td class="num" rowspan="3">15</td><td>Simplicidad</td><td class="num">5</td></tr>
-          <tr><td>Instrumentación</td><td class="num">5</td></tr>
-          <tr><td>Autodescriptividad</td><td class="num">5</td></tr>
+          <tr><td rowspan="3">Interactividad — <span class="num">15</span></td><td>Robustez</td><td class="num"></td></tr>
+          <tr><td>Accesibilidad</td><td class="num"></td></tr>
+          <tr><td>Capacidad de comunicación</td><td class="num"></td></tr>
 
-          <tr><td rowspan="3">Comprensibilidad</td><td class="num" rowspan="3">15</td><td>Consistencia</td><td class="num">5</td></tr>
-          <tr><td>Estructuración</td><td class="num">5</td></tr>
-          <tr><td>Concisión</td><td class="num">5</td></tr>
+          <tr><td rowspan="6"><strong>Mantenibilidad</strong></td><td class="num" rowspan="6">20</td>
+              <td rowspan="2">Facilidad de prueba — <span class="num">5</span></td><td>Auto descripción</td><td class="num"></td></tr>
+          <tr><td>Estructuración</td><td class="num"></td></tr>
 
-          <tr><td rowspan="2">Flexibilidad</td><td class="num" rowspan="2">10</td><td>Generalidad</td><td class="num">5</td></tr>
-          <tr><td>Expansibilidad</td><td class="num">5</td></tr>
+          <tr><td rowspan="2">Facilidad de entendimiento — <span class="num">10</span></td><td>Concisión</td><td class="num"></td></tr>
+          <tr><td>Legibilidad</td><td class="num"></td></tr>
 
-          <tr><td rowspan="2"><strong>Portabilidad</strong></td><td class="num" rowspan="2">20</td>
-              <td rowspan="2">Portabilidad</td><td class="num" rowspan="2">20</td><td>Independencia del sistema</td><td class="num">10</td></tr>
-          <tr><td>Independencia del dispositivo</td><td class="num">10</td></tr>
+          <tr><td rowspan="2">Modificabilidad — <span class="num">5</span></td><td>Estructuración</td><td class="num"></td></tr>
+          <tr><td>Escalabilidad</td><td class="num"></td></tr>
 
-          <tr class="total-row"><td><strong>Puntaje total</strong></td><td class="num"><strong>100</strong></td><td></td><td class="num"></td><td></td><td class="num"><strong>100</strong></td></tr>
+          <tr class="total-row"><td><strong>Puntaje total</strong></td><td class="num"><strong>100</strong></td><td colspan="2"></td><td class="num"><strong>100</strong></td></tr>
         </tbody>
       </table>
     </div>
+    <p class="small-note">El puntaje de cada característica de nivel intermedio (por ejemplo, Fiabilidad = 40) se reparte entre sus características primitivas al momento de aplicar el cuestionario — así se hace en la página de Aplicación.</p>
 
     <div class="grid-2">
       <div class="card">
         <h3>Ventajas</h3>
-        <p>Integra el desarrollo del software con su mantenimiento y ofrece un amplio rango de características primitivas, tomando lo mejor de otros modelos como el de McCall.</p>
+        <p>Integra el desarrollo del software con su mantenimiento y ofrece un amplio rango de características primitivas medibles mediante preguntas concretas, tomando lo mejor de otros modelos como el de McCall.</p>
       </div>
       <div class="card">
         <h3>Cuándo se usa</h3>
-        <p>Resulta útil cuando interesa evaluar no solo la experiencia de uso actual, sino también qué tan fácil sería mantener, adaptar o portar el producto a otros contextos.</p>
+        <p>Resulta útil cuando interesa evaluar no solo la experiencia de uso actual (Utilidad), sino también qué tan fácil sería mantener, adaptar o portar el producto a otros contextos (Mantenibilidad y Portabilidad).</p>
       </div>
     </div>
   </div>
