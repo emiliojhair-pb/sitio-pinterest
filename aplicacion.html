@@ -130,88 +130,143 @@
     <!-- ===================== TAB BOEHM ===================== -->
     <div class="tab-panel" id="tab-boehm">
 
-      <h2>1. Cuestionario aplicado — Boehm</h2>
-      <p>Siguiendo la plantilla oficial, cada característica primitiva se evaluó con una pregunta puntual sobre Pinterest. El <strong>Puntaje Esperado</strong> de cada primitiva es el peso de su nivel intermedio (Tabla 2) repartido en partes iguales entre sus primitivas; el <strong>Puntaje Obtenido</strong> refleja qué tanto cumple Pinterest esa pregunta.</p>
+      <h2>1. Descripción de las características primitivas y cuestionario</h2>
+<p>Cada primitiva se evaluó con una pregunta puntual sobre Pinterest, usando la escala cualitativa de la plantilla: <strong>Excelente</strong>, <strong>Buena</strong>, <strong>Regular</strong> o <strong>Deficiente</strong>. El "Puntaje Esperado" es siempre Excelente (el estándar ideal); el "Puntaje Obtenido" refleja el nivel real observado en Pinterest.</p>
 
-      <div class="table-scroll">
-        <table>
-          <caption>Tabla 3. Preguntas, puntaje esperado y puntaje obtenido por característica primitiva</caption>
-          <thead>
-            <tr>
-              <th>Alto nivel</th>
-              <th>Nivel intermedio</th>
-              <th>Primitiva</th>
-              <th>Pregunta</th>
-              <th class="num">Punt. esperado</th>
-              <th class="num">Punt. obtenido</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="group-row"><td colspan="6"><strong>Portabilidad</strong></td></tr>
-            <tr><td rowspan="2">Portabilidad</td><td rowspan="2">—</td><td>Independencia de dispositivos</td><td>¿La aplicación funciona correctamente en distintos dispositivos (móvil, tablet, escritorio) sin perder funcionalidad?</td><td class="num">5</td><td class="num">5,0</td></tr>
-            <tr><td>Auto-contención</td><td>¿La aplicación funciona sin depender de hardware o software externo poco común?</td><td class="num">5</td><td class="num">5,0</td></tr>
+<div class="table-scroll">
+  <table>
+    <caption>Tabla 3. Descripción de las características primitivas y cuestionario</caption>
+    <thead>
+      <tr>
+        <th>Alto nivel</th>
+        <th>Nivel intermedio</th>
+        <th>Primitivas</th>
+        <th>Preguntas</th>
+        <th>Puntaje esperado</th>
+        <th>Puntaje obtenido</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td rowspan="2">Utilidad general</td><td rowspan="2">Portabilidad</td><td>Independencia de Dispositivos</td><td>¿La aplicación funciona correctamente en distintos dispositivos (móvil, tablet, escritorio) sin perder funcionalidad?</td><td>Excelente</td><td><span class="score-pill s4">Excelente</span></td></tr>
+      <tr><td>Auto-contención</td><td>¿La aplicación funciona sin depender de hardware o software externo poco común?</td><td>Excelente</td><td><span class="score-pill s4">Excelente</span></td></tr>
 
-            <tr class="group-row"><td colspan="6"><strong>Utilidad</strong></td></tr>
-            <tr><td rowspan="4">Utilidad</td><td rowspan="4">Fiabilidad</td><td>Precisión</td><td>¿Los resultados de búsqueda y las recomendaciones corresponden a lo que el usuario solicita?</td><td class="num">10</td><td class="num">8,0</td></tr>
-            <tr><td>Completitud</td><td>¿La aplicación cubre todas las funciones que promete (guardar, buscar, comprar, compartir)?</td><td class="num">10</td><td class="num">10,0</td></tr>
-            <tr><td>Robustez</td><td>¿La aplicación maneja adecuadamente errores de red o entradas inesperadas sin fallar?</td><td class="num">10</td><td class="num">8,0</td></tr>
-            <tr><td>Consistencia</td><td>¿El comportamiento de la app es el mismo entre sesiones y dispositivos?</td><td class="num">10</td><td class="num">10,0</td></tr>
+      <tr><td rowspan="4">Utilidad general</td><td rowspan="4">Fiabilidad</td><td>Precisión</td><td>¿Los resultados de búsqueda y las recomendaciones corresponden a lo que el usuario solicita?</td><td>Excelente</td><td><span class="score-pill s3">Buena</span></td></tr>
+      <tr><td>Completitud</td><td>¿La aplicación cubre todas las funciones que promete (guardar, buscar, comprar, compartir)?</td><td>Excelente</td><td><span class="score-pill s4">Excelente</span></td></tr>
+      <tr><td>Robustez</td><td>¿La aplicación maneja adecuadamente errores de red o entradas inesperadas sin fallar?</td><td>Excelente</td><td><span class="score-pill s3">Buena</span></td></tr>
+      <tr><td>Consistencia</td><td>¿El comportamiento de la app es el mismo entre sesiones y dispositivos?</td><td>Excelente</td><td><span class="score-pill s4">Excelente</span></td></tr>
 
-            <tr><td rowspan="3">Utilidad</td><td rowspan="3">Eficiencia</td><td>Responsabilidad</td><td>¿La app responde con rapidez a las acciones del usuario (guardar, buscar, cargar)?</td><td class="num">5</td><td class="num">4,0</td></tr>
-            <tr><td>Eficiencia de dispositivos</td><td>¿La app hace un uso razonable de batería, datos móviles y almacenamiento?</td><td class="num">5</td><td class="num">3,0</td></tr>
-            <tr><td>Accesibilidad</td><td>¿Los usuarios acceden fácilmente a las funciones sin pasos innecesarios?</td><td class="num">5</td><td class="num">4,0</td></tr>
+      <tr><td rowspan="3">Utilidad general</td><td rowspan="3">Eficiencia</td><td>Responsabilidad</td><td>¿La app responde con rapidez a las acciones del usuario (guardar, buscar, cargar)?</td><td>Excelente</td><td><span class="score-pill s3">Buena</span></td></tr>
+      <tr><td>Eficiencia de dispositivos</td><td>¿La app hace un uso razonable de batería, datos móviles y almacenamiento?</td><td>Excelente</td><td><span class="score-pill s2">Regular</span></td></tr>
+      <tr><td>Accesibilidad</td><td>¿Los usuarios acceden fácilmente a las funciones sin pasos innecesarios?</td><td>Excelente</td><td><span class="score-pill s3">Buena</span></td></tr>
 
-            <tr><td rowspan="3">Utilidad</td><td rowspan="3">Interactividad</td><td>Robustez</td><td>¿La interfaz responde de forma estable ante distintas formas de interacción (touch, teclado, mouse)?</td><td class="num">5</td><td class="num">5,0</td></tr>
-            <tr><td>Accesibilidad</td><td>¿La app ofrece opciones de accesibilidad (lectores de pantalla, subtítulos, tamaños de texto)?</td><td class="num">5</td><td class="num">3,0</td></tr>
-            <tr><td>Capacidad de comunicación</td><td>¿La app permite compartir y comunicar contenido fácilmente con otros usuarios o plataformas?</td><td class="num">5</td><td class="num">5,0</td></tr>
+      <tr><td rowspan="3">Utilidad general</td><td rowspan="3">Interactividad</td><td>Robustez</td><td>¿La interfaz responde de forma estable ante distintas formas de interacción (touch, teclado, mouse)?</td><td>Excelente</td><td><span class="score-pill s4">Excelente</span></td></tr>
+      <tr><td>Accesibilidad</td><td>¿La app ofrece opciones de accesibilidad (lectores de pantalla, subtítulos, tamaños de texto)?</td><td>Excelente</td><td><span class="score-pill s2">Regular</span></td></tr>
+      <tr><td>Capacidad de comunicación</td><td>¿La app permite compartir y comunicar contenido fácilmente con otros usuarios o plataformas?</td><td>Excelente</td><td><span class="score-pill s4">Excelente</span></td></tr>
 
-            <tr class="group-row"><td colspan="6"><strong>Mantenibilidad</strong></td></tr>
-            <tr><td rowspan="2">Mantenibilidad</td><td rowspan="2">Facilidad de prueba</td><td>Auto descripción</td><td>¿Las funciones se explican solas mediante íconos y etiquetas claras?</td><td class="num">2,5</td><td class="num">2,0</td></tr>
-            <tr><td>Estructuración</td><td>¿Se pueden probar funciones de forma aislada (ej. buscar) sin depender de otras (ej. iniciar sesión)?</td><td class="num">2,5</td><td class="num">1,5</td></tr>
+      <tr><td rowspan="2">Utilidad general</td><td rowspan="2">Facilidad de Prueba</td><td>Auto descripción</td><td>¿Las funciones se explican solas mediante íconos y etiquetas claras?</td><td>Excelente</td><td><span class="score-pill s3">Buena</span></td></tr>
+      <tr><td>Estructuración</td><td>¿Se pueden probar funciones de forma aislada (ej. buscar) sin depender de otras (ej. iniciar sesión)?</td><td>Excelente</td><td><span class="score-pill s2">Regular</span></td></tr>
 
-            <tr><td rowspan="2">Mantenibilidad</td><td rowspan="2">Facilidad de entendimiento</td><td>Concisión</td><td>¿La interfaz evita elementos innecesarios que compliquen su uso?</td><td class="num">5</td><td class="num">4,0</td></tr>
-            <tr><td>Legibilidad</td><td>¿Los textos, íconos y tipografías son fáciles de leer y entender?</td><td class="num">5</td><td class="num">5,0</td></tr>
+      <tr><td rowspan="2">Utilidad general</td><td rowspan="2">Facilidad de Entendimiento</td><td>Concisión</td><td>¿La interfaz evita elementos innecesarios que compliquen su uso?</td><td>Excelente</td><td><span class="score-pill s3">Buena</span></td></tr>
+      <tr><td>Legibilidad</td><td>¿Los textos, íconos y tipografías son fáciles de leer y entender?</td><td>Excelente</td><td><span class="score-pill s4">Excelente</span></td></tr>
 
-            <tr><td rowspan="2">Mantenibilidad</td><td rowspan="2">Modificabilidad</td><td>Estructuración</td><td>¿La app permite personalizar la experiencia (tableros, preferencias, notificaciones) sin afectar el resto del sistema?</td><td class="num">2,5</td><td class="num">2,5</td></tr>
-            <tr><td>Escalabilidad</td><td>¿La plataforma ha incorporado nuevas funciones (video pines, compras) sin perder estabilidad?</td><td class="num">2,5</td><td class="num">2,5</td></tr>
-          </tbody>
-        </table>
-      </div>
+      <tr><td rowspan="2">Utilidad general</td><td rowspan="2">Modificabilidad</td><td>Estructuración</td><td>¿La app permite personalizar la experiencia (tableros, preferencias, notificaciones) sin afectar el resto del sistema?</td><td>Excelente</td><td><span class="score-pill s4">Excelente</span></td></tr>
+      <tr><td>Escalabilidad</td><td>¿La plataforma ha incorporado nuevas funciones (video pines, compras) sin perder estabilidad?</td><td>Excelente</td><td><span class="score-pill s4">Excelente</span></td></tr>
+    </tbody>
+  </table>
+</div>
+      <h2>2. Puntuación Obtenida</h2>
+<p>Se convierte cada nivel cualitativo a un valor numérico (Excelente = 100%, Buena = 80%, Regular = 60%, Deficiente ≤ 40%) sobre el puntaje esperado de cada primitiva, se promedia por nivel intermedio y se multiplica por el peso máximo de ese nivel (Tabla 2 de Modelos).</p>
 
-      <h2>2. Resultados de la evaluación — Boehm</h2>
-      <p>Por cada nivel intermedio se calcula el <strong>Promedio Nivel</strong> (puntaje obtenido ÷ puntaje esperado) y se aplica sobre el peso máximo de ese nivel (Tabla 2) para obtener el <strong>Puntaje Nivel</strong>.</p>
+<div class="table-scroll">
+  <table>
+    <caption>Tabla 4. Puntuación obtenida por primitiva y por nivel</caption>
+    <thead>
+      <tr>
+        <th>Alto nivel</th>
+        <th>Nivel intermedio</th>
+        <th>Primitivas</th>
+        <th class="num">Puntaje esperado</th>
+        <th class="num">Puntaje obtenido</th>
+        <th class="num">Promedio nivel</th>
+        <th class="num">Puntaje nivel</th>
+        <th class="num">Promedio total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td rowspan="18">Utilidad general</td><td>Portabilidad</td><td>Independencia de Dispositivos</td><td class="num">5</td><td class="num">5,0</td><td class="num" rowspan="2">100%</td><td class="num" rowspan="2">10,00</td><td class="num" rowspan="18"><strong>87,50</strong></td></tr>
+      <tr><td>Portabilidad</td><td>Auto-contención</td><td class="num">5</td><td class="num">5,0</td></tr>
 
-      <div class="table-scroll">
-        <table>
-          <caption>Tabla 4. Promedio y puntaje por nivel intermedio, y total por característica de alto nivel</caption>
-          <thead>
-            <tr>
-              <th>Alto nivel</th>
-              <th>Nivel intermedio</th>
-              <th class="num">Punt. esperado</th>
-              <th class="num">Punt. obtenido</th>
-              <th class="num">Promedio nivel</th>
-              <th class="num">Punt. nivel</th>
-              <th class="num">Total alto nivel</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td><strong>Portabilidad</strong></td><td>—</td><td class="num">10</td><td class="num">10,0</td><td class="num"><span class="score-pill s4">100%</span></td><td class="num">10,00</td><td class="num"><strong>10,00 / 10</strong></td></tr>
+      <tr><td>Fiabilidad</td><td>Precisión</td><td class="num">10</td><td class="num">8,0</td><td class="num" rowspan="4">90%</td><td class="num" rowspan="4">36,00</td></tr>
+      <tr><td>Fiabilidad</td><td>Completitud</td><td class="num">10</td><td class="num">10,0</td></tr>
+      <tr><td>Fiabilidad</td><td>Robustez</td><td class="num">10</td><td class="num">8,0</td></tr>
+      <tr><td>Fiabilidad</td><td>Consistencia</td><td class="num">10</td><td class="num">10,0</td></tr>
 
-            <tr><td rowspan="3"><strong>Utilidad</strong></td><td>Fiabilidad</td><td class="num">40</td><td class="num">36,0</td><td class="num"><span class="score-pill s4">90%</span></td><td class="num">36,00</td><td class="num" rowspan="3"><strong>60,00 / 70</strong></td></tr>
-            <tr><td>Eficiencia</td><td class="num">15</td><td class="num">11,0</td><td class="num"><span class="score-pill s3">73%</span></td><td class="num">11,00</td></tr>
-            <tr><td>Interactividad</td><td class="num">15</td><td class="num">13,0</td><td class="num"><span class="score-pill s3">87%</span></td><td class="num">13,00</td></tr>
+      <tr><td>Eficiencia</td><td>Responsabilidad</td><td class="num">5</td><td class="num">4,0</td><td class="num" rowspan="3">73%</td><td class="num" rowspan="3">11,00</td></tr>
+      <tr><td>Eficiencia</td><td>Eficiencia de dispositivos</td><td class="num">5</td><td class="num">3,0</td></tr>
+      <tr><td>Eficiencia</td><td>Accesibilidad</td><td class="num">5</td><td class="num">4,0</td></tr>
 
-            <tr><td rowspan="3"><strong>Mantenibilidad</strong></td><td>Facilidad de prueba</td><td class="num">5</td><td class="num">3,5</td><td class="num"><span class="score-pill s3">70%</span></td><td class="num">3,50</td><td class="num" rowspan="3"><strong>17,50 / 20</strong></td></tr>
-            <tr><td>Facilidad de entendimiento</td><td class="num">10</td><td class="num">9,0</td><td class="num"><span class="score-pill s4">90%</span></td><td class="num">9,00</td></tr>
-            <tr><td>Modificabilidad</td><td class="num">5</td><td class="num">5,0</td><td class="num"><span class="score-pill s4">100%</span></td><td class="num">5,00</td></tr>
+      <tr><td>Interactividad</td><td>Robustez</td><td class="num">5</td><td class="num">5,0</td><td class="num" rowspan="3">87%</td><td class="num" rowspan="3">13,00</td></tr>
+      <tr><td>Interactividad</td><td>Accesibilidad</td><td class="num">5</td><td class="num">3,0</td></tr>
+      <tr><td>Interactividad</td><td>Capacidad de comunicación</td><td class="num">5</td><td class="num">5,0</td></tr>
 
-            <tr class="total-row"><td colspan="6"><strong>Puntaje total Boehm</strong></td><td class="num"><strong>87,50 / 100</strong></td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
+      <tr><td>Facilidad de Prueba</td><td>Auto descripción</td><td class="num">2,5</td><td class="num">2,0</td><td class="num" rowspan="2">70%</td><td class="num" rowspan="2">3,50</td></tr>
+      <tr><td>Facilidad de Prueba</td><td>Estructuración</td><td class="num">2,5</td><td class="num">1,5</td></tr>
+
+      <tr><td>Facilidad de Entendimiento</td><td>Concisión</td><td class="num">5</td><td class="num">4,0</td><td class="num" rowspan="2">90%</td><td class="num" rowspan="2">9,00</td></tr>
+      <tr><td>Facilidad de Entendimiento</td><td>Legibilidad</td><td class="num">5</td><td class="num">5,0</td></tr>
+
+      <tr><td>Modificabilidad</td><td>Estructuración</td><td class="num">2,5</td><td class="num">2,5</td><td class="num" rowspan="2">100%</td><td class="num" rowspan="2">5,00</td></tr>
+      <tr><td>Modificabilidad</td><td>Escalabilidad</td><td class="num">2,5</td><td class="num">2,5</td></tr>
+    </tbody>
+  </table>
+</div>
+
+      <h2>3. Resultados de la evaluación</h2>
+<p>Tabla final: puntaje obtenido acumulado por nivel intermedio (Total/Nivel), sobre la escala máxima de ese nivel (Puntaje Escala), y el puntaje que aporta al total general (Puntaje Nivel).</p>
+
+<div class="table-scroll">
+  <table>
+    <caption>Tabla 5. Resultados de la evaluación — Boehm</caption>
+    <thead>
+      <tr>
+        <th>Alto nivel</th>
+        <th>Nivel intermedio</th>
+        <th>Primitivas</th>
+        <th class="num">Puntaje obtenido</th>
+        <th class="num">Puntaje escala</th>
+        <th class="num">Total / nivel</th>
+        <th class="num">Puntaje nivel</th>
+        <th class="num">Total evaluación</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td rowspan="18">Utilidad general</td><td rowspan="2">Portabilidad</td><td>Independencia de Dispositivos</td><td class="num">5,0</td><td class="num" rowspan="2">10</td><td class="num" rowspan="2">10,00</td><td class="num" rowspan="2">10,00</td><td class="num" rowspan="18"><strong>87,50 / 100</strong></td></tr>
+      <tr><td>Auto-contención</td><td class="num">5,0</td></tr>
+
+      <tr><td rowspan="4">Fiabilidad</td><td>Precisión</td><td class="num">8,0</td><td class="num" rowspan="4">40</td><td class="num" rowspan="4">36,00</td><td class="num" rowspan="4">36,00</td></tr>
+      <tr><td>Completitud</td><td class="num">10,0</td></tr>
+      <tr><td>Robustez</td><td class="num">8,0</td></tr>
+      <tr><td>Consistencia</td><td class="num">10,0</td></tr>
+
+      <tr><td rowspan="3">Eficiencia</td><td>Responsabilidad</td><td class="num">4,0</td><td class="num" rowspan="3">15</td><td class="num" rowspan="3">11,00</td><td class="num" rowspan="3">11,00</td></tr>
+      <tr><td>Eficiencia de dispositivos</td><td class="num">3,0</td></tr>
+      <tr><td>Accesibilidad</td><td class="num">4,0</td></tr>
+
+      <tr><td rowspan="3">Interactividad</td><td>Robustez</td><td class="num">5,0</td><td class="num" rowspan="3">15</td><td class="num" rowspan="3">13,00</td><td class="num" rowspan="3">13,00</td></tr>
+      <tr><td>Accesibilidad</td><td class="num">3,0</td></tr>
+      <tr><td>Capacidad de comunicación</td><td class="num">5,0</td></tr>
+
+      <tr><td rowspan="2">Facilidad de Prueba</td><td>Auto descripción</td><td class="num">2,0</td><td class="num" rowspan="2">5</td><td class="num" rowspan="2">3,50</td><td class="num" rowspan="2">3,50</td></tr>
+      <tr><td>Estructuración</td><td class="num">1,5</td></tr>
+
+      <tr><td rowspan="2">Facilidad de Entendimiento</td><td>Concisión</td><td class="num">4,0</td><td class="num" rowspan="2">10</td><td class="num" rowspan="2">9,00</td><td class="num" rowspan="2">9,00</td></tr>
+      <tr><td>Legibilidad</td><td class="num">5,0</td></tr>
+
+      <tr><td rowspan="2">Modificabilidad</td><td>Estructuración</td><td class="num">2,5</td><td class="num" rowspan="2">5</td><td class="num" rowspan="2">5,00</td><td class="num" rowspan="2">5,00</td></tr>
+      <tr><td>Escalabilidad</td><td class="num">2,5</td></tr>
+    </tbody>
+  </table>
+</div>
 </section>
 
 <footer>
